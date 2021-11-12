@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Estudio de técnicas de visualización de datos</title>
+
+	<meta name="author" content="Zechao Jin">
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<h3>
+					Line chart (Gráfica de Línea)
+				</h3>
+				<p>
+					Las gráficas de líneas son una representación visual que muestran las frecuencias o los valores de
+					una sola variable de la misma manera que lo hace una gráfica de barras.
+				</p>
+				<p>
+					Se usa con mayor frecuencia para mostrar tendencias y relaciones (cuando se agrupan con otras
+					líneas). Los gráficos de línea también ayudan a dar un «panorama general» en un intervalo, para ver
+					cómo se ha desarrollado durante ese período.
+				</p>
+				<p>
+					Esta técnica se puede usar para mostrar los valores cuantitativos en un intervalo o intervalo de
+					tiempo continuo.
+				</p>
+				<p>
+					En nuestro ejemplo queremos comprar la velocidad de dos coches durante 12 segundos, donde el eje X
+					presenta tiempo en segundo, y el eje Y presenta la velocidad en KM/hora. La línea de tendencia entre
+					los puntos se puede entender como la variación de velocidad durante un segundo.
+				</p>
+				<div class="row">
+					<div class="col-md-12">
+						<img src="line chart.png" alt="line chart" width="50%">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<h3>
+					Force-Directed Graph (Grafo dirigido por fuerza)
+				</h3>
+				<p>Este tipo de gráficos se pretende presentar estructura de grafos colocando los nodos de un gráfico en
+					un espacio bidimensional o tridimensional de modo que todos los bordes sean de más o menos igual de
+					longitud y hay el menor número posible de aristas y bordes cruzados.</p>
+				<p>Normalmente se utiliza para mostrar las relaciones entre los datos, como, por ejemplo, visualización
+					de redes sociales.</p>
+				<p>
+					Esta técnica se puede usar tanto para datos cuantitativos o cualitativos, donde los datos
+					cualitativos suelen ser los nodos y los datos cuantitativos para las aristas.
+				</p>
+				<p>
+					En este ejemplo de grafo dirigido por la fuerza muestra las conexiones entre las estaciones de
+					bicicletas compartidas en el Área de la Bahía de San Francisco. Cada círculo representa una
+					estación. El color del círculo muestra la ciudad en la que se encuentra la estación, y el tamaño del
+					círculo muestra cuántos recorridos comienzan desde esa estación. Los viajes entre estaciones están
+					representados por barras grises. Cuanto más gruesa es la barra, más atracciones conectan las dos
+					estaciones.
+				</p>
+				<div class="row">
+					<iframe src="https://modeanalytics.com/modeanalytics/reports/5cd8a79fadc4/embed" width="80%"
+						height="700px" frameborder="0"></iframe>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<h3>
+					Spiral plot (Diagrama espiral)
+				</h3>
+				<p>
+					Este tipo de diagrama de visualización está basado en datos temporales a lo largo de una espiral de
+					Arquímedes. El gráfico comienza desde el centro de la espiral y progresa hacia el exterior. Los
+					diagramas en espiral son versátiles y pueden utilizar barras, líneas o puntos a lo largo de la
+					trayectoria de la espiral.
+				</p>
+				<p>
+					para mostrar tendencias a lo largo de un período de tiempo largo. Esto hace que los diagramas en
+					espiral sean ideales para exhibir patrones periódicos. El color se puede asignar a cada período para
+					dividirlo y permitir cierta comparación entre cada período. Así, por ejemplo, si mostramos datos
+					durante un año, podríamos asignar un color para cada mes en el gráfico.
+				</p>
+				<p>
+					En nuestro ejemplo presentamos las ventas brutas de una tienda de un año entero, si nos fijamos en
+					el color de las barras, estos varían según el día de la semana, y a veces se puede ver días vacías,
+					que son los días que no tienen ventas.
+				</p>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="col-md-12">
+							<img src="spiral-plot.png" alt="spiral plot" width="50%">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+
+</html>
